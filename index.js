@@ -1,6 +1,10 @@
 const express = require('express');
 const routes = require('./router/routes')
 const path = require('path');
+
+const databaseMiddleware = require('./middleware/databaseMiddleware')
+
+
 require('dotenv').config();
 
 const PORT = process.env.PORT || 3000;
@@ -21,6 +25,10 @@ try {
     // settings
     app.set("view engine", "ejs");
     app.set("views", path.join(__dirname, "views"));
+
+    app.use(databaseMiddleware)
+    
 } finally {
     routes(app);
 }
+
