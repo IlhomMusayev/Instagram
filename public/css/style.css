@@ -35,7 +35,6 @@ img {
 }
 
 .container {
-    max-width: 93.5rem;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -527,4 +526,257 @@ span.more-options {
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.IG-logo {
+    font-family: cursive;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+.phone-img {
+   background-image: url(https://i.ibb.co/XsHfBLx/Phones.png);
+   background-size: 445px 600px;
+    background-repeat: no-repeat;
+    height: 618px;
+    width: 420px;
+    padding-right: 1.5em;
+    padding-top:1em;
+    padding-bottom: 1.5em ;
+
+}
+
+.register-fb{
+    background-color: #2C95F6;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+.register-fb > span a{
+    color: #fff;
+}
+.phone-img > img{
+    margin-top: 8em;
+    margin-left: 14.5em;
+}
+
+.input-form {
+    background-color: #fff;
+    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: -2em; */
+    border: 1px solid #ccc;
+    padding: 20px 40px  ;
+    
+}
+.form{
+    text-align: center;
+}
+
+.input-container {
+    text-align: center;
+    width: 100%;
+    /*    margin-bottom: -2em;*/
+}
+
+.text-input {
+    width: 100%;
+    height: 10px;
+    padding: 1.3em;
+    margin-bottom: 5px;
+    background-color: none;
+    border-radius: 4px;
+    border-style: groove;
+    font-size: 12px;
+    border: 1px solid #c1c1c1;
+
+}
+.text-input:focus{
+    outline: none;
+    border: 1px solid #000;
+}
+
+
+.button {
+    background-color: #2C95F6;
+    /*    background-color: #0095f6;*/
+    border: none;
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.lines {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    color: #888;
+    width: 100%;
+}
+
+.left-line {
+    background-color: #aaa;
+    width: 100%;
+    height: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.right-line {
+    background-color: #aaa;
+    width: 100%;
+    height: 1px;
+     margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fb-login-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.fb-login-text > span{
+    color: #385185;
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fb-login-text > span a{
+    text-decoration: none;
+    color: #385185;
+}
+
+p.forgot-pwd{
+    margin-top: 0em;
+}
+
+p.forgot-pwd > span{
+    color:#385185;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+div.input-form-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.signup-text{
+    background-color: #fff;
+    width: 100%;
+    height: 63px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+div.signup-text a{
+    text-decoration: none;
+    color: #2C95F6;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 5px;
+    
+}
+
+div.appstore-btns{
+    display: flex;
+    margin-top: 20px;
+}
+
+div.appstore-btns a > img{
+    width:136px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+div.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.footer-links{
+    margin-top: 40px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+div.footer-links ul{
+display: inline;
+}
+
+div.footer-links ul li{
+text-decoration: none;
+list-style-type: none;
+color: #385185;
+display: inline;
+margin-right: 5px;
+margin-left: 5px;
+font-weight: bold;
+font-size: 15px;
+}
+
+span.copyright{
+    color:#888;
+    font-size: 14px;
+    font-family: calibri;
+    /*display: inline;*/
+}
+
+
+@media (max-width: 990px){
+    .input-form {
+        width:100%;
+        padding: 20px;
+        border: none;
+        background: none;
+    }
+    .phone-img{
+        display:none;
+    }
+    .footer{
+        display: none;
+    }
+    div.appstore-btns{
+        display: block;
+    }
 }
